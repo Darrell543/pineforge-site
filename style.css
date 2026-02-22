@@ -1,0 +1,133 @@
+/* ── Reset & Base ───────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background-color: #0e0e0e;
+  color: #d4d4d4;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Layout ─────────────────────────────────────────── */
+.site-header,
+.site-footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.site-header {
+  padding-top: 3rem;
+}
+
+main {
+  flex: 1;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  width: 100%;
+}
+
+/* ── Typography ─────────────────────────────────────── */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ── Links ──────────────────────────────────────────── */
+a {
+  color: #7eb8da;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ── Header ─────────────────────────────────────────── */
+.site-logo {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.75rem;
+}
+
+.studio-name {
+  margin-bottom: 0.25rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #888888;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #888888;
+  border: 1px solid #333333;
+  border-radius: 3px;
+  padding: 0.1em 0.4em;
+  vertical-align: middle;
+  margin-left: 0.25rem;
+}
+
+/* ── Sections ───────────────────────────────────────── */
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Footer ─────────────────────────────────────────── */
+.site-footer {
+  font-size: 0.85rem;
+  color: #555555;
+  border-top: 1px solid #1a1a1a;
+}
+
+/* ── Responsive ─────────────────────────────────────── */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 1.5rem 1rem;
+  }
+}
